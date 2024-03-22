@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        const num1 = 10;
+        const num2 = 4;
+        document.write(`${num1}/${num2} = ${num1/ num2}<br>`)
+        document.write(`${num1}/${num2} = ${parseInt(num1/ num2)}<br>`)
+        document.write(`${num1}/${num2} = ${num1 * num2}<br>`)
+        document.write(`${num1}/${num2} = ${num1 % num2}<br>`)
+    </script>
+    <script>
+        let n1, n2;
+        n1 = n2 = 5;
+        n1+=1; document.write(`${n1}<br>`);
+        n1-=1; document.write(`${n1}<br>`);
+        n1*=n2; document.write(`${n1}<br>`);
+        n1/=n2; document.write(`${n1}<br>`);
+        n1%=n2; document.write(`${n1}<br>`);
+        /*연산자는 거의 다 자바와 비슷하나 관계연산자의 경우
+        ==와 != 는 자바와 동일함
+        ===와 !==는 자료형까지 같은가를 확인해 참 거짓 출력
+        */
+
+        document.write(`<hr>`);
+        n1 = '3'; n2 = 3;
+
+        document.write((n1 == n2) +"<br>");// 자료형이 다르지만 둘다 3 참
+        document.write((n1 != n2) +"<br>");// 거짓
+        document.write((n1 === n2) +"<br>");// 거짓
+        document.write((n1 !== n2) +"<br>");// 참
+
+        document.write(`<hr>`);
+        document.write((true || false)+"<br>");
+        document.write((true && false)+"<br>");
+        document.write(!(true && false)+"<br>");
+
+        document.write(`<hr>`);
+        const x = 5;
+        const y = 7;
+        let result;
+        result = (x > y)? x : y;
+        document.write("큰 값 : "+result+"<br>");
+        result = (x > y )?x-y:y-x;
+        document.write(`큰값 - 작은값 : ${result}`)
+    </script>
+    
+</body>
+</html>

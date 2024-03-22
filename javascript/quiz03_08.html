@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = prompt(`아파트 층 수 입력(30 이하)`);
+        document.write(`<table border="1">`)
+            for( ; n1 > 0 ; n1--){
+            document.write(`
+                <tr>
+                    <td>${n1}01호</td>
+                    <td>${n1}02호</td>
+                    <td>${n1}03호</td>
+                    <td>${n1}04호</td>
+                </tr>
+                `)}
+                document.write(`</table>`)
+    </script>
+    
+</body>
+</html>

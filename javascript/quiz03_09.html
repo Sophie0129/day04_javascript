@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        while(true){
+            let n1 = prompt(`수 입력 (10~20사이의 수)`);
+            if(n1 > 20){
+                msg = `범위를 벗어났습니다. 다시 입력해주세요`;
+                alert(msg);
+                continue;
+            }else if(n1 < 10){
+                msg = `범위를 벗어났습니다. 다시 입력해주세요`;
+                alert(msg);
+                continue;
+            }else {
+                for(var i=0; n1 > 0 ; n1--){
+                    let k = Number(n1);
+                    i += k;
+                }break;
+            }
+        }
+        document.write(`입력 받은 수까지의 합 : ${i}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const n1 = prompt(`수 입력 : `);
+        const n2 = prompt(`수 입력 : `);
+
+        let r1, r2;
+        r1 = (n1%2 == 0)? '짝수입니다':'홀수입니다';
+        r2 = (n2%2 == 0)? '짝수입니다':'홀수입니다';
+        document.write(`${n1}은 ${r1}<br>`);
+        document.write(`${n2}은 ${r2}`);
+
+        document.write(`<hr>`)
+        r1 = (n1%3 == 0)? '3의 배수입니다':'3의 배수가 아닙니다';
+        r2 = (n2%3 == 0)? '3의 배수입니다':'3의 배수가 아닙니다';
+        document.write(`${n1}은 ${r1}<br>`);
+        document.write(`${n2}은 ${r2}`);
+
+        document.write(`<hr>`)
+        r1 = (n1 > n2)? `${n1}이 ${n2}보다 크다`:`${n2}이 ${n1}보다 크다`;
+        document.write(r1);
+      
+
+
+        
+
+    </script>
+</body>
+</html>
